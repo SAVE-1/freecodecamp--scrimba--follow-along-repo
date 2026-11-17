@@ -1,0 +1,103 @@
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.header-1 {
+  background-color: chocolate;
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.header-1 > .inner-header-1 {
+  display: inline;
+  margin-left: 5px;
+}
+
+.header-1 > img {
+  height: 30px;
+  color: white;
+  filter: invert(100%);
+}
+
+.destination {
+  display: flex;
+  align-items: center; /* vertically centers items */
+  text-align: left;
+}
+
+.destination > img {
+  height: 300px;
+  vertical-align:middle;
+  margin-right: 16px; /* spacing between image and text */
+  border-radius: 5px;
+}
+
+.destination > .info-container {
+  flex: 1; /* allows text to take remaining space */
+}
+
+.destination .destination-link {
+  position: relative;
+  display: inline-block; /* display on the same line */
+  position: relative;
+  text-decoration: underline;
+}
+
+.destination .destination-country {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-right: 12px;
+}
+
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
